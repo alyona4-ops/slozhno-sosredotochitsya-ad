@@ -57,7 +57,7 @@
   inset-inline-start: 0;
 }
 
-.rec_label {
+.rec_lable {
   align-items: center;
   align-self: start;
   justify-self: right;
@@ -73,7 +73,7 @@
   inset-inline-end: 0;
 }
 
-.rec_label::after {
+.rec_lable::after {
   content: " ";
   inline-size: 9px;
   block-size: 9px;
@@ -450,19 +450,19 @@
   }
 }
 
-.simple-link {
+.simpl-link {
   text-decoration: none;
   text-shadow: 2px 2px 0 var(--accent-color);
 }
 
-.simple-link:hover {
+.simpl-link:hover {
   border-bottom: 1px solid var(--main-text-color);
 }
 
-.simple-link:focus {
+.simpl-link:focus {
   outline: none;
 }
 
-.simple-link:focus-visible {
+.simpl-link:focus-visible {
   outline: 1px solid currentColor;
 }
