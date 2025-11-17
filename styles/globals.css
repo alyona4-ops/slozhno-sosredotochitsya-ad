@@ -5,8 +5,8 @@
 }
 
 body {
-  min-width: 375px;
-  max-width: 1440px;
+  min-inline-size: 375px;
+  max-inline-size: 1440px;
   margin: 0 auto;
 }
 
@@ -37,13 +37,4 @@ a {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
-  text-decoration: none;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-}
-
-img {
-  display: block;
-  max-width: 100%;
 }

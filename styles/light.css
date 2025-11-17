@@ -1,43 +1,48 @@
 :root.theme-light {
-  --accent-color: #FF8DCB;
-  --bg-color: #FFF1F7;
-  --decoration-color: #353430;
-  --button-color: #353430;
-  --decor-color: #353430;
-  --decor-bg-color: #FF8DCB;
-  --main-bg-color: #FF8DCB;
-  --main-text-color: #353430;
-  --nav-color: #353430;
-  --nav-hover-color: rgba(53, 52, 48, 0.4);
-  --main-heading-color: #353430;
-  --header-logo-color: #FFC2E6;
-  --footer-logo-color: #FFC2E6;
+  --accent-color: var(--basic-pink);
+  --bg-color: var(--approximately-white);
+  --decoration-color: var(--almost-black);
+  --button-color: var(--almost-black);
+  --decor-color: var(--almost-black);
+  --decor-bg-color: var(--basic-pink);
+  --main-bg-color: var(--basic-pink);
+  --main-text-color: var(--almost-black);
+  --nav-color: var(--almost-black);
+  --nav-hover-color: var(--transparent-black);
+  --main-heading-color: var(--almost-black);
+  --header-logo-color: var(--title-color-light);
+  --footer-logo-color: var(--title-color-light);
   --background-image: url("../images/cover-image-light.png");
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    --accent-color: #FF8DCB;
-    --bg-color: #FFF1F7;
-    --decoration-color: #353430;
-    --button-color: #353430;
-    --decor-color: #353430;
-    --decor-bg-color: #FF8DCB;
-    --main-bg-color: #FFF1F7;
-    --main-text-color: #353430;
-    --nav-color: #353430;
-    --nav-hover-color: rgba(53, 52, 48, 0.4);
-    --main-heading-color: #353430;
-    --header-logo-color: #FFC2E6;
-    --footer-logo-color: #FFC2E6;
+    --accent-color: var(--basic-pink);
+    --bg-color: var(--approximately-white);
+    --decoration-color: var(--almost-black);
+    --button-color: var(--almost-black);
+    --decor-color: var(--almost-black);
+    --decor-bg-color: var(--basic-pink);
+    --main-bg-color: var(--almost-white-bg);
+    --main-text-color: var(--almost-black);
+    --nav-color: var(--almost-black);
+    --nav-hover-color: var(--transparent-black);
+    --main-heading-color: var(--almost-black);
+    --header-logo-color: var(--title-color-light);
+    --footer-logo-color: var(--title-color-light);
     --background-image: url("../images/cover-image-light.png");
   }
-  
-  .decorated-element {
+  .rec_label::after {
+    display: none;
+  }
+  .rec_label {
     display: none;
   }
 }
 
-.theme-light .decorated-element {
+.theme-light .rec_label::after {
+  display: none;
+}
+.theme-light .rec_label {
   display: none;
 }
