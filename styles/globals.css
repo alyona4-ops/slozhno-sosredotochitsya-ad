@@ -65,38 +65,3 @@ a:focus {
   white-space: nowrap;
   border: 0;
 }
-
-button,
-a {
-  color: currentColor;
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  border: none;
-  background: none;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-button:focus,
-a:focus {
-  outline: none;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
-}
