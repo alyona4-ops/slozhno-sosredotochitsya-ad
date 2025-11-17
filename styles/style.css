@@ -13,13 +13,13 @@
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
   min-height: 100vh;
   background-color: var(--main-bg-color);
   background-image: var(--header-bg-image);
   background-position: center;
   background-size: cover;
-  background-attachment: fixed; 
+  background-attachment: fixed;
   background-repeat: no-repeat;
 }
 
@@ -31,7 +31,7 @@
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 13px;
 }
 
 .header__theme-menu-button {
@@ -79,9 +79,9 @@
 .header__text {
   justify-self: end;
   align-self: center;
-  max-width: 50%;
+  max-width: 100%;
   font-weight: 700;
-  margin-block-start: 20px;
+  margin-block-start: 55px;
 }
 
 .decorated-zone {
@@ -95,8 +95,8 @@
   height: 25px;
   border-inline-end: 1px solid var(--decor-color);
   border-block-start: 1px solid var(--decor-color);
-  inset-inline-end: 20px;
-  inset-block-start: 20px;
+  inset-inline-end: 10px;
+  inset-block-start: 10px;
 }
 
 .decorated-zone::after {
@@ -106,8 +106,8 @@
   height: 25px;
   border-inline-start: 1px solid var(--decor-color);
   border-block-end: 1px solid var(--decor-color);
-  inset-inline-start: 20px;
-  inset-block-end: 20px;
+  inset-inline-start: 10px;
+  inset-block-end: 10px;
 }
 
 .decorated-element {
@@ -115,8 +115,8 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  inset-inline-end: 29px;
-  inset-block-start: 20px;
+  inset-inline-end: 19px;
+  inset-block-start: 10px;
   color: var(--decor-color);
   font-weight: 400;
   line-height: 1.389;
@@ -134,8 +134,8 @@
 .main {
   display: flex;
   flex-direction: column;
-  gap: 80px;
-  padding: 40px 20px;
+  gap: 50px;
+  padding: 40px 10px;
 }
 
 .section {
@@ -238,7 +238,7 @@
   display: grid;
   place-items: center;
   min-height: 100vh;
-  padding: 20px;
+  padding: 10px;
 }
 
 .footer__title {
@@ -249,6 +249,7 @@
   text-shadow: 4px 4px 0 var(--title-shadow);
 }
 
+/* Планшетная версия */
 @media (width >= 768px) {
   .header {
     padding: 20px;
@@ -261,6 +262,7 @@
   
   .header__text {
     max-width: 364px;
+    margin-block-start: 20px;
   }
   
   .main {
@@ -282,17 +284,13 @@
     grid-column: 2;
   }
   
-  .section-top-title {
-    display: block;
-  }
-  
   .section-top-title .section__title {
     margin-block-end: 20px;
   }
   
   .section-top-title .section__content {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
   
@@ -318,11 +316,31 @@
     grid-column: span 2;
   }
   
+  .footer {
+    padding: 20px;
+  }
+  
   .footer__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
+  
+  .decorated-zone::before {
+    inset-inline-end: 20px;
+    inset-block-start: 20px;
+  }
+  
+  .decorated-zone::after {
+    inset-inline-start: 20px;
+    inset-block-end: 20px;
+  }
+  
+  .decorated-element {
+    inset-inline-end: 29px;
+    inset-block-start: 20px;
+  }
 }
 
+/* Десктопная версия */
 @media (width >= 1024px) {
   .header__theme-menu {
     justify-self: center;
@@ -338,15 +356,7 @@
   }
   
   .section-top-title .section__content {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-  }
-  
-  .section-top-title .card {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
   }
   
   .section-left-title {
@@ -359,32 +369,27 @@
   }
 }
 
+/* Мобильная версия */
 @media (width < 768px) {
   .header__text {
     max-width: 100%;
   }
   
   .decorated-element {
-    inset-inline-end: 38px;
+    inset-inline-end: 19px;
   }
   
   .main {
-    gap: 30px;
-    padding: 30px 10px;
+    gap: 50px;
+    padding: 40px 10px;
   }
+  
   .header {
-    padding: 10px; 
-    min-height: 668px; 
+    padding: 10px;
   }
   
   .header__title {
-    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     margin-inline-start: 0;
-  }
-  
-  .main {
-    padding: 40px 10px; 
-    gap: 50px; 
   }
   
   .decorated-zone::before {
@@ -398,12 +403,13 @@
   }
   
   .decorated-element {
-    inset-inline-end: 19px; 
+    inset-inline-end: 19px;
     inset-block-start: 10px;
   }
   
   .section-left-title {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
   
   .section-top-title .section__content {
@@ -414,6 +420,10 @@
   .gallery__grid {
     display: flex;
     flex-direction: column;
-    gap: 10px; 
+    gap: 10px;
+  }
+  
+  .gallery__image {
+    height: auto;
   }
 }
