@@ -1,16 +1,16 @@
 :root {
-  --main-font: 'IBM Plex mono';
-  --bold-font: 700;
-  --main-font-size: 18px;
-  --main-line-height: 1.3;
-  --main-mobile-gap: 10px;
-  --main-gap: 20px;
-  --bg-color: rgb(0, 24, 63);
-  --title-color: rgb(219, 0, 255);
-  --subheading-color: rgb(0, 0, 40);
-  --accent-color: rgb(255, 0, 112);
-  --nav-color: rgb(255, 0, 112);
-  --nav-hover-color: rgba(50, 49, 45, 0.4);
-  --text-color: rgb(241, 178, 206);
-  --bg-image: url(../images/cover-image-dark.png);
+  --main-bg-color: #000028;
+  --text-color: #F1B2CE;
+  --accent-color: #FF0070;
+  --title-color: #DB00FF;
+  --title-shadow: #FF0070;
+  --section-title-color: #FF0070;
+  --card-title-color: #000028;
+  --card-bg-color: #FF0070;
+  --button-color: #FF0070;
+  --button-hover-color: rgba(255, 0, 112, 0.4);
+  --decor-color: #FF0070;
+  --main-font: 'IBM Plex Mono', monospace;
+  --font-size-base: 18px;
+  --header-bg-image: url("../images/cover-image-dark.png");
 }
