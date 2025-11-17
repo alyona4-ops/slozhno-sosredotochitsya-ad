@@ -32,10 +32,10 @@
     --footer-logo-color: var(--title-color-dark);
     --background-image: url("../images/cover-image-dark.png");
   }
-  .rec_label::after {
+  .rec_lable::after {
     display: inline-block;
   }
-  .rec_label {
+  .rec_lable {
     display: inline-flex;
   }
 }
