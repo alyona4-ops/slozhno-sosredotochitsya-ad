@@ -1,55 +1,35 @@
-:root.theme-light {
-  --main-bg-color: #FFF1F7;
-  --text-color: #353430;
-  --accent-color: #FF8DCB;
-  --title-color: #FFC2E6;
-  --title-shadow: #FF0070;
-  --section-title-color: #353430;
-  --card-title-color: #353430;
-  --card-bg-color: #FF8DCB;
-  --button-color: #353430;
-  --button-hover-color: rgba(50, 49, 45, 0.4);
-  --decor-color: #353430;
-  --header-bg-image: url("../images/cover-image-light.png");
+:root {
+  .page.theme_light {
+  --bg-color: rgb(255, 241, 247);
+  --title-color: rgb(255, 194, 230);
+  --subheading-color: rgb(53, 52, 48);
+  --accent-color: rgb(255, 141, 203);
+  --nav-color: rgb(53, 52, 48);
+  --nav-hover-color: rgba(50, 49, 45, 0.4);
+  --text-color: rgb(53, 52, 48);
+  --bg-image: url(../images/cover-image-light.png);
+  }
 }
 
-.theme-light .decorated-element {
-  display: none;
-}
-
-.theme-light .header__theme-menu-button {
-  color: var(--button-color);
-}
-
-.theme-light .header__theme-menu-button:hover {
-  border-color: var(--button-hover-color);
-}
-
-.theme-light .header__theme-menu-button:focus-visible {
-  border-block-end: 1px solid var(--button-color);
-}
-
-.theme-light .header__theme-menu-button_active {
-  border-color: var(--button-color);
+.page.theme_light {
+  .header__theme-dark-decoration {
+    display: none;
+  }
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    --main-bg-color: #FFF1F7;
-    --text-color: #353430;
-    --accent-color: #FF8DCB;
-    --title-color: #FFC2E6;
-    --title-shadow: #FF0070;
-    --section-title-color: #353430;
-    --card-title-color: #353430;
-    --card-bg-color: #FF8DCB;
-    --button-color: #353430;
-    --button-hover-color: rgba(50, 49, 45, 0.4);
-    --decor-color: #353430;
-    --header-bg-image: url("../images/cover-image-light.png");
+    --bg-color: rgb(255, 241, 247);
+    --title-color: rgb(255, 194, 230);
+    --subheading-color: rgb(53, 52, 48);
+    --accent-color: rgb(255, 141, 203);
+    --nav-color: rgb(53, 52, 48);
+    --nav-hover-color: rgba(50, 49, 45, 0.4);
+    --text-color: rgb(53, 52, 48);
+    --bg-image: url(../images/cover-image-light.png);
   }
-  
-  .decorated-element {
+
+  .header__theme-dark-decoration {
     display: none;
   }
 }
