@@ -5,8 +5,8 @@
 }
 
 body {
-  min-inline-size: 375px;
-  max-inline-size: 1440px;
+  min-width: 375px;
+  max-width: 1440px;
   margin: 0;
 }
 
@@ -26,11 +26,6 @@ ul {
   list-style: none;
 }
 
-picture {
-  margin: 0;
-  padding: 0;
-}
-
 button,
 a {
   color: currentColor;
@@ -45,5 +40,5 @@ a {
 
 img {
   display: block;
-  max-inline-size: 100%;
+  max-width: 100%;
 }
