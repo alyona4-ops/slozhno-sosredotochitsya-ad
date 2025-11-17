@@ -31,6 +31,17 @@ function setTheme(theme) {
   localStorage.setItem('theme', theme);
 }
 
+function setActiveButton(buttons, theme) {
+  buttons.forEach(button => {
+    button.classList.remove('header__theme-menu-button_active');
+    button.disabled = false;
+    
+    if (button.classList.contains(`header__theme-menu-button_type_${theme}`)) {
+      button.classList.add('header__theme-menu-button_active');
+      button.disabled = true;
+    }
+  });
+}
 function setActiveButton(buttonsArray, theme) {
   buttonsArray.forEach((button) => {
     button.classList.remove('header__theme-menu-button_active');

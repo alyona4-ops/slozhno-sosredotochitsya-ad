@@ -1,48 +1,43 @@
 :root.theme-dark {
-  --accent-color: var(--real-red);
-  --bg-color: var(--approximately-black);
-  --decoration-color: var(--real-red);
-  --button-color: var(--real-red);
-  --decor-color: var(--approximately-black);
-  --decor-bg-color: var(--real-red);
-  --main-bg-color: var(--approximately-black);
-  --main-text-color: var(--title-pink);
-  --nav-color: var(--approximately-black);
-  --nav-hover-color: var(--transparent-red);
-  --main-heading-color: var(--real-red);
-  --header-logo-color: var(--title-color-dark);
-  --footer-logo-color: var(--title-color-dark);
+  --accent-color: #FF0070;
+  --bg-color: #000028;
+  --decoration-color: #FF0070;
+  --button-color: #FF0070;
+  --decor-color: #000028;
+  --decor-bg-color: #FF0070;
+  --main-bg-color: #000028;
+  --main-text-color: #F1B2CE;
+  --nav-color: #000028;
+  --nav-hover-color: rgba(255, 0, 112, 0.4);
+  --main-heading-color: #FF0070;
+  --header-logo-color: #DB00FF;
+  --footer-logo-color: #DB00FF;
   --background-image: url("../images/cover-image-dark.png");
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --accent-color: var(--real-red);
-    --bg-color: var(--approximately-black);
-    --decoration-color: var(--real-red);
-    --button-color: var(--real-red);
-    --decor-color: var(--approximately-black);
-    --decor-bg-color: var(--real-red);
-    --main-bg-color: var(--approximately-black);
-    --main-text-color: var(--title-pink);
-    --nav-color: var(--real-red);
-    --nav-hover-color: var(--transparent-red);
-    --main-heading-color: var(--real-red);
-    --header-logo-color: var(--title-color-dark);
-    --footer-logo-color: var(--title-color-dark);
+    --accent-color: #FF0070;
+    --bg-color: #000028;
+    --decoration-color: #FF0070;
+    --button-color: #FF0070;
+    --decor-color: #000028;
+    --decor-bg-color: #FF0070;
+    --main-bg-color: #000028;
+    --main-text-color: #F1B2CE;
+    --nav-color: #FF0070;
+    --nav-hover-color: rgba(255, 0, 112, 0.4);
+    --main-heading-color: #FF0070;
+    --header-logo-color: #DB00FF;
+    --footer-logo-color: #DB00FF;
     --background-image: url("../images/cover-image-dark.png");
   }
-  .rec_lable::after {
-    display: inline-block;
-  }
-  .rec_lable {
-    display: inline-flex;
+  
+  .decorated-element {
+    display: flex;
   }
 }
 
-.theme-dark .rec_lable::after {
-  display: inline-block;
-}
-.theme-dark .rec_lable {
-  display: inline-flex;
+.theme-dark .decorated-element {
+  display: flex;
 }
