@@ -1,16 +1,23 @@
 :root {
-  --main-bg-color: #000028;
-  --text-color: #F1B2CE;
-  --accent-color: #FF0070;
-  --title-color: #DB00FF;
-  --title-shadow: #FF0070;
-  --section-title-color: #FF0070;
-  --card-title-color: #000028;
-  --card-bg-color: #FF0070;
-  --button-color: #FF0070;
-  --button-hover-color: rgba(255, 0, 112, 0.4);
-  --decor-color: #FF0070;
-  --main-font: 'IBM Plex Mono', monospace;
-  --font-size-base: 18px;
-  --header-bg-image: url("../images/cover-image-dark.png");
+  --title-color-light: #ffc2e6;
+  --basic-pink: #ff8dcb;
+  --title-pink: #f1b2ce;
+  --real-red: #ff0070;
+  --approximately-white: #FFF1F7;
+  --approximately-black: #000028;
+  --almost-black: #353430;
+  --transparent-black: #35343066;
+  --transparent-red: #ff007066;
+  --title-color-dark: #db00ff;
+  --regular-font-size: 18px;
+  --regular-line-height: 100%;
+  --decoration-gap: clamp(10px, 2.65vw, 20px);
+  --margin-small: 10px;
+  --margin-medium: 20px;
+  --margin-large: 40px;
+  --margin-x-large: 50px;
+  --margin-xl: 80px;
+  --min-height: 668px;
+  --project-font-family: "IBM Plex Mono", monospace;
+  --corner-thickness: 1px;
 }

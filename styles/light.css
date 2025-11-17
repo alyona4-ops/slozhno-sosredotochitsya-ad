@@ -1,39 +1,47 @@
-.page.theme_light {
-  --main-bg-color: #FFF1F7;
-  --text-color: #353430;
-  --accent-color: #FF8DCB;
-  --title-color: #FFC2E6;
-  --title-shadow: #FF0070;
-  --section-title-color: #353430;
-  --card-title-color: #353430;
-  --card-bg-color: #FF8DCB;
-  --button-color: #353430;
-  --button-hover-color: rgba(50, 49, 45, 0.4);
-  --decor-color: #353430;
-  --header-bg-image: url("../images/cover-image-light.png");
-}
-
-.page.theme_light .decorated-element {
-  display: none;
+:root.theme-light {
+  --accent-color: var(--basic-pink);
+  --bg-color: var(--approximately-white);
+  --decoration-color: var(--almost-black);
+  --button-color: var(--almost-black);
+  --decor-color: var(--almost-black);
+  --decor-bg-color: var(--basic-pink);
+  --main-bg-color: var(--basic-pink);
+  --main-text-color: var(--almost-black);
+  --nav-color: var(--almost-black);
+  --nav-hover-color: var(--transparent-black);
+  --main-heading-color: var(--almost-black);
+  --header-logo-color: var(--title-color-light);
+  --footer-logo-color: var(--title-color-light);
+  --background-image: url("../images/cover-image-light.png");
 }
 
 @media (prefers-color-scheme: light) {
-  :root:not(.theme_dark) {
-    --main-bg-color: #FFF1F7;
-    --text-color: #353430;
-    --accent-color: #FF8DCB;
-    --title-color: #FFC2E6;
-    --title-shadow: #FF0070;
-    --section-title-color: #353430;
-    --card-title-color: #353430;
-    --card-bg-color: #FF8DCB;
-    --button-color: #353430;
-    --button-hover-color: rgba(50, 49, 45, 0.4);
-    --decor-color: #353430;
-    --header-bg-image: url("../images/cover-image-light.png");
+  :root {
+    --accent-color: var(--basic-pink);
+    --bg-color: var(--approximately-white);
+    --decoration-color: var(--almost-black);
+    --button-color: var(--almost-black);
+    --decor-color: var(--almost-black);
+    --decor-bg-color: var(--basic-pink);
+    --main-bg-color: var(--almost-white-bg);
+    --main-text-color: var(--almost-black);
+    --nav-color: var(--almost-black);
+    --nav-hover-color: var(--transparent-black);
+    --main-heading-color: var(--almost-black);
+    --header-logo-color: var(--title-color-light);
+    --footer-logo-color: var(--title-color-light);
+    --background-image: url("../images/cover-image-light.png");
   }
-  
-  :root:not(.theme_dark) .decorated-element {
+  .rec_lable::after {
     display: none;
   }
+  .rec_lable {
+    display: none;
+  }
+}
+.theme-light .rec_lable::after {
+  display: none;
+}
+.theme-light .rec_lable {
+  display: none;
 }

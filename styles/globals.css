@@ -5,9 +5,9 @@
 }
 
 body {
-  min-width: 375px;
-  max-width: 1440px;
-  margin: 0;
+  min-inline-size: 375px;
+  max-inline-size: 1440px;
+  margin: 0 auto;
 }
 
 h1,
@@ -26,19 +26,15 @@ ul {
   list-style: none;
 }
 
+picture {
+  margin: 0;
+  padding: 0;
+}
+
 button,
 a {
   color: currentColor;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
-  text-decoration: none;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-}
-
-img {
-  display: block;
-  max-width: 100%;
 }
