@@ -6,7 +6,7 @@
   --button-color: var(--almost-black);
   --decor-color: var(--almost-black);
   --decor-bg-color: var(--basic-pink);
-  --main-bg-color: var(--approximately-white);
+  --main-bg-color: var(--basic-pink);
   --main-text-color: var(--almost-black);
   --nav-color: var(--almost-black);
   --nav-hover-color: var(--transparent-black);
@@ -24,7 +24,7 @@
     --button-color: var(--almost-black);
     --decor-color: var(--almost-black);
     --decor-bg-color: var(--basic-pink);
-    --main-bg-color: var(--approximately-white);
+    --main-bg-color: var(--almost-white-bg);
     --main-text-color: var(--almost-black);
     --nav-color: var(--almost-black);
     --nav-hover-color: var(--transparent-black);
