@@ -1,3 +1,4 @@
+/* styles/dark.css */
 :root.theme-dark {
   --accent-color: var(--real-red);
   --bg-color: var(--approximately-black);

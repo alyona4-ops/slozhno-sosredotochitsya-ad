@@ -1,3 +1,4 @@
+/* styles/variables.css */
 :root {
   --title-color-light: #ffc2e6;
   --basic-pink: #ff8dcb;
@@ -18,6 +19,6 @@
   --margin-x-large: 50px;
   --margin-xl: 80px;
   --min-height: 668px;
-  --project-font-family: "IBM Plex mono", monospace;
+  --project-font-family: "IBM Plex Mono", monospace;
   --corner-thickness: 1px;
 }

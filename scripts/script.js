@@ -1,7 +1,8 @@
-(function setupTheme() {
+// scripts/script.js
+(function initTheme() {
   const theme = localStorage.getItem('theme');
   if (theme) {
-    applyTheme(theme);
+    setTheme(theme);
   }
 })();
 
@@ -12,36 +13,41 @@ document.addEventListener('DOMContentLoaded', () => {
   const themeButtons = [
     ...document.querySelectorAll('.header__theme-menu-button'),
   ];
-  markActiveButton(themeButtons, currentTheme);
+  setActiveButton(themeButtons, currentTheme);
 
   themeButtons.forEach((button) => {
     button.addEventListener('click', () => {
       const chosenTheme = [...button.classList]
         .find((cn) => cn.includes('_type_'))
         .split('_type_')[1];
-      applyTheme(chosenTheme);
-      markActiveButton(themeButtons, chosenTheme);
+      setTheme(chosenTheme);
+      setActiveButton(themeButtons, chosenTheme);
     });
   });
 });
 
-function applyTheme(theme) {
+function setTheme(theme) {
   document.documentElement.className = '';
   document.documentElement.classList.add(`theme-${theme}`);
   localStorage.setItem('theme', theme);
 }
 
-function markActiveButton(buttons, theme) {
-  buttons.forEach((button) => {
-    const buttonTheme = [...button.classList]
-      .find((cn) => cn.includes('_type_'))
-      .split('_type_')[1];
-    if (buttonTheme === theme) {
-      button.classList.add('header__theme-menu-button_active');
-      button.disabled = true;
-    } else {
-      button.classList.remove('header__theme-menu-button_active');
-      button.disabled = false;
-    }
+function setActiveButton(buttonsArray, theme) {
+  buttonsArray.forEach((button) => {
+    button.classList.remove('header__theme-menu-button_active');
+    button.removeAttribute('disabled');
   });
+  const target = buttonsArray.find((button) =>
+    button.classList.contains(`header__theme-menu-button_type_${theme}`)
+  );
+  if (target) {
+    target.classList.add('header__theme-menu-button_active');
+    target.setAttribute('disabled', true);
+  } else {
+    const autoButton = document.querySelector(
+      '.header__theme-menu-button_type_auto'
+    );
+    autoButton.classList.add('header__theme-menu-button_active');
+    autoButton.setAttribute('disabled', true);
+  }
 }
